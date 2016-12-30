@@ -1,0 +1,16 @@
+BACK:
+- Movement cheat protection
+
+FRONT:
+- Camera system (Decoupling x/y from canvas)
+- Sprite
+    1. static
+    2. dynamic (Different elements)
+
+BOTH:
+- Map loading
+- Registration
+    -> DB persistance
+    -> Login system
+    -> Token check on /ws
+- Caracteristics (Speed/Force/Agi)

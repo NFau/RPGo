@@ -1,0 +1,20 @@
+@import '../../colors';
+
+.Game {
+    display: flex;
+}
+
+.SideBar {
+    width: 25%;
+}
+
+.PlayGround {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+
+    #playground {
+        border: 3px double $color-warm-chocolate;
+        background-color: black;
+    }
+}

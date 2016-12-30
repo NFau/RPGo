@@ -1,0 +1,24 @@
+===================== Network ==========================
+
+1st Approach:
+  Client calculate next position
+  Server validation (YES/NO)
+  Client resync using server response
+
+  Problems:
+    -> If lag, players will jump
+    -> Clients are always late (for smooth animation)
+
+  Evolution:
+    -> Server calculate what would have been the correct position
+      -> Involve to have a LERP on front instead of a speed move
+
+Major evolution:
+  -> Propagate event to server at fixed time (every 100ms for exemple)
+      ->  Dirty flag on players
+
+Optimal:
+  Server should receive a directional vector and should calculate the position
+
+
+========================================================
